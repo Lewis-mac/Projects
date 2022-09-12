@@ -1,0 +1,50 @@
+from tkinter.messagebox import YES
+
+
+print ("Welcome to my World Of Warcraft quiz game!")
+
+playing = input("Are you ready? ")
+
+if playing != "yes":
+    quit()
+
+print("okay lets play!")
+score = 0
+
+answer = input("What year did World Of Warcraft originally release?")
+if answer == "2004":
+    print('Correct! Well Done.')
+    score += 1
+else:
+    print('Incorrect! Do your homework bruh...')
+
+answer = input("Who is the current leader of the Alliance?")
+if answer == "Young Anduin":
+    print('Correct! Well Done.')
+    score += 1
+else:
+    print('Incorrect! Damn you stink...')
+
+answer = input("What is the name of the Hordes main city?")
+if answer == "Orgrimmar":
+    print('Correct! Well Done.')
+    score += 1
+else:
+    print('Incorrect! Begins with an O ends in a R...')
+
+answer = input("Whats the pvp mount token called?")
+if answer == "Vicious Saddle":
+    print('Correct! Well Done.')
+    score += 1
+else:
+    print('Incorrect! That was an easy one...')
+
+answer = input("What is the name of the creppy dude in ICC?")
+if answer == "Lich King":
+    print('Correct! Well Done.')
+    score += 1
+else:
+    print('Incorrect! Nice Try...')
+    
+print ("Damn you got " + str(score) + " questions correct!")
+print ("You got " + str((score / 4) * 100) + "%!.")
